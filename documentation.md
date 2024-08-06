@@ -3,7 +3,7 @@
 
 
 This is a collaborative documentation to clear up misconception, and provide information about the "new" radars in Stormworks.
-Huge credit goes to L963 for setting the groundwork of how and when radar updates its data, and providing the original idea of a documentation.
+Huge credit goes to L963 for setting the groundwork of how and when radars update their data, and providing the original idea of a documentation.
 
 ## table of contets:
 1. [noise](#noise)
@@ -19,7 +19,7 @@ Huge credit goes to L963 for setting the groundwork of how and when radar update
 
 ## noise: <a name="noise"></a>
 	
-New radar targets experience noise, wich is a random offset from its true position, and updated every tick.
+New radar targets experience noise, wich is a random offset from thier true position, and is updated every tick.
 It is split up into angular noise, and distance noise.
 	
 **angular nosie:** ±0.001 turns
@@ -130,14 +130,11 @@ The position update rate depends on the maximum range of the radar, and can be e
 	 Example: 3km radar
 
 	- U(3000) = 2 -> each radar can provide one update every 2 ticks
-
 	- You use 2 radars, turned on in sequence, such that we always have one radar updating on every tick.
-	
-    - To get useful data out of the radars, we have to alternate between their composite outputs using a composite switchbox.
-	- You know this worked, if the 4th number channel of the output of the composite switchbox (time since detection) is constant,
-	- when looking at a target. Optimally, you want it to be 0, in order to have minimal delay.
-	-   It does not work together with the radars built in Sweep Modes, since all radars must be looking in the same direction
-
+	- To get useful data out of the radars, we have to alternate between their composite outputs using a composite switchbox.
+	- You know this worked, if the 4th number channel of the output of the composite switchbox (time since detection) is constant, when looking at a target.
+ 	- Optimally, you want it to be 0, in order to have minimal delay.
+	- It does not work together with the radars built in Sweep Modes, since all radars must be looking in the same direction
 	- This method can be take further, by averaging the targets noisy positions between true position updates, to reduce noise
 
 
