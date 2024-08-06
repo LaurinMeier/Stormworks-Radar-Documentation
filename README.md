@@ -109,7 +109,7 @@ The position update rate depends on the maximum range of the radar, and can be e
 
 - The radar updates when it hits 0 and the radar is turned on, thus updating every U(r) ticks.
 
-- Targets are not only detected once the timer has reset (not on start)
+- Targets are only detected once the timer has reset (not on start)
 
 - Timer needs electricity to run
 	
