@@ -1,7 +1,5 @@
 # Stormworks Radar Documentation:
 
-# fuck you tsd!!!!!!!!
-
 
 This is a collaborative documentation to clear up misconception, and provide information about the "new" radars in Stormworks.
 Huge credit goes to L963 for setting the groundwork of how and when radars update their data, and providing the original idea of a documentation.
