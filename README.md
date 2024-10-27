@@ -73,7 +73,7 @@ Best results are achieved by rotating the radar slightly slower, in order to hav
 
 The built in sweep speed is different between radars. You can still achieve any desired RPS with the Sweep Speed slider, or the XML number:
 
-``S(coefficient, rps) = 100 / coefficient * rps`` where ``S(coefficient, rps)`` is the "Sweep Speed" slider percentage and the ``coefficient`` is the RPS each the radar type when the speed is 100%
+``S(coefficient, rps) = coefficient * rps / 100`` where ``S(coefficient, rps)`` is the "Sweep Speed" slider percentage and the ``coefficient`` is the RPS each the radar type when the speed is 100%
 
 | Radar Type     | Coefficient |
 |----------------|:-----------:|
