@@ -89,7 +89,7 @@ The built in sweep speed is different between radars. You can still achieve any 
 
 ## update rate: <a name="rate"></a>
 
-Radar noise is update every tick, but the actual target position is not. This is a problem for spinning radars with a maximum distance of 3km and above, that rely on 1 position update per tick.
+Radar noise is updated every tick, but the actual target position is not. This is a problem for spinning radars with a maximum distance of 3km and above, that rely on 1 position update per tick.
 	
 The position update rate depends on the maximum range of the radar, and can be expressed as the following function:
 
